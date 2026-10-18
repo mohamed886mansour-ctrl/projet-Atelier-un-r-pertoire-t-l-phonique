@@ -32,17 +32,6 @@ def chercher(contacts, nom):
     #Renvoie le numero du contact, ou Non si le nom est absent.
     return contacts.get(nom,"contact non trouve")
 
-
-def supprimer(contacts, nom):
-    #Supprime un contact s'il existe, sinon informe l'utilisateur.
-    if nom not in contacts:
-        print("Le contact " + nom + " n'existe pas.")
-        return
-
-    del contacts[nom]
-    print("Contact " + nom + " supprime.")
-
-
 def nombre_contacts(contacts):
     #Renvoie le nombre total de contacts.
     return len(contacts)
